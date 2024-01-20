@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +8,43 @@
     <!-- Installing Tailwind with Daisy UI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/ef66a13064.js" crossorigin="anonymous"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'bike-primary': '#E76F51',
+                'bike-primary-bg': 'rgba(231, 111, 81, 0.10)',
+              }
+            }
+          }
+        }
+      </script>
 </head>
-<body>
+<body class="font-manrope">
     <!-- Header Section -->
-    <header>
-
+    <header class="container mx-auto">
+        <div class="hero">
+            <div class="hero-content flex-col lg:flex-row">
+              
+              <div>
+                <h1 class="text-5xl font-extrabold text-7xl">It's good<br> 
+                    tea time at The <br>Tea House</h1>
+                <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+                <button class="btn btn-primary">Explore More</button>
+              </div>
+              <div>
+                <img src="images/banner.png" class="max-w-sm" />
+                <!-- rating -->
+                <div class="-mt-16 flex items-center rounded-xl drop-shadow-lg bg-white p-5 w-60">
+                    <div><i class="fa-solid fa-star text-3xl text-amber-400"></i></div>
+                    <div><h3>5.00</h3>
+                    <p>Trust Pilot Ratings</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
     </header>
     <main></main>
     <footer></footer>
